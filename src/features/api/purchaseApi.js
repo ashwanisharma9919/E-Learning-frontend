@@ -1,5 +1,5 @@
 import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
-const BASE_URL = import.meta.env.VITE_BASE_URL;
+const BASE_URL = import.meta.env.VITE_BASE_URL || "https://e-learning-backend-rjwo.onrender.com/api/v1";
 
 const COURSE_PURCHASE_API = `${BASE_URL}/purchase`;
 
