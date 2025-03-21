@@ -17,7 +17,10 @@ import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { toast } from "sonner";
 
-const MEDIA_API = "http://localhost:8080/api/v1/media";
+
+const BASE_URL = import.meta.env.VITE_BASE_URL || "https://e-learning-backend-rjwo.onrender.com/api/v1";
+
+const MEDIA_API = `${BASE_URL}/media`;
 
 const LectureTab = () => {
   const [lectureTitle, setLectureTitle] = useState("");
